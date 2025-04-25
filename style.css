@@ -1,0 +1,175 @@
+/* RESET */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+p {
+  font-size: 1.2rem;
+}
+
+/* CONTENT */
+
+.video-container {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+video {
+  width: 100vw;
+  height: auto;
+}
+
+.video-container__overlay {
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 65px;
+
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+nav > img {
+  width: 60px;
+  margin: 10px 0px 0px 30px;
+}
+
+a:hover {
+  color: #ff0000;
+  font-size: 1.3rem;
+  transition: 0.4s ease;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+  height: 90vh;
+  padding: 100px;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.content-section > img {
+  width: 380px;
+}
+
+.content-section > p {
+  line-height: 30px;
+  letter-spacing: 1px;
+  margin: 25px 0px 35px 0px;
+}
+
+.content__button {
+  background: #ff0000;
+  color: #fff;
+
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  cursor: pointer;
+  outline: none;
+
+  letter-spacing: 1px;
+
+  width: 300px;
+  height: 60px;
+
+  border: none;
+  border-radius: 10px;
+}
+
+.content__button:hover {
+  background: #fff;
+  color: #000;
+  font-size: 1.3rem;
+
+  width: 320px;
+  height: 65px;
+  transition: 0.5s ease-out;
+}
+
+.content__button:active {
+  opacity: 0.6;
+  transition: 0.5 ease-in-out;
+}
+
+/* transição de imagem */
+/* faltando: javascript */
+.visual-section__image--transition {
+  width: 200px;
+}
+
+.visual-section__image {
+  width: 400px;
+}
+
+/* container link whatsapp com texto tooltip */
+.whatsapp-container {
+  position: fixed;
+  bottom:20px;
+  right: 30px;
+}
+
+.whatsapp-link > img {
+  width: 70px;
+}
+
+.whatsapp-link__image:hover {
+  width: 75px;
+  transition: 0.2s ease-in-out;
+}
+
+/* caixa de texto após passar o mouse no link whatsapp */
+.tooltip-text {
+  background-color: #fff;
+  color: #000;
+  visibility: hidden;
+
+  position: absolute;
+  bottom: 90%;
+  left: 0px;
+
+  width: 200px;
+  font-size: 1.2rem;
+  text-align: center;
+
+  padding: 5px 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+
+  transform: translateX(-60%); /* Ajustando a distância do eixo X */
+  transition: opacity 0.3s;
+}
+
+.whatsapp-link:hover .tooltip-text {
+  visibility: visible;
+}

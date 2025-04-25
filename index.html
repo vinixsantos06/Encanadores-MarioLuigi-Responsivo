@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/logo-header.png" />
+    <title>Encanadores - Mario&Luigi</title>
+  </head>
+  <body>
+    <!-- Vídeo de fundo e máscara negra -->
+    <div class="video-container">
+      <video src="./assets/video.mp4" autoplay muted loop playsinline></video>
+      <div class="video-container__overlay"></div>
+    </div>
+
+    <!-- Cabeçalho com navegação -->
+    <header>
+      <nav class="nav-menu">
+        <img
+          src="./assets/logo-header.png"
+          class="header__logo"
+          alt="Imagem do Rosto do Mario"
+        />
+        <a href="#">Home</a>
+        <a href="#">Serviços</a>
+        <a href="#">Fale Conosco</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Seção principal - Conteúdo -->
+      <section class="content-section">
+        <img
+          src="./assets/logo.png"
+          class="content__logo"
+          alt="Imagem do Logo Mario&Luigi"
+        />
+        <p class="content__description">
+          🛠️ Encanadores Mario&Luigi: Resolvendo Seus Problemas Hidráulicos Com
+          Estilo 🛠️ <br />
+          Você já se encontrou em uma situação de emergência com encanamento?
+          Vazamentos inesperados, canos entupidos ou torneiras que não param de
+          pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+          Apresentamos a vocês os encanadores mais famosos do Reino dos
+          Cogumelos.
+        </p>
+        <button class="content__button">Entre em Contato</button>
+      </section>
+
+      <!-- Seção de imagens -->
+      <section class="visual-section">
+        <!-- <img
+          src="./assets/luigi.png"
+          class="visual-section__image--transition"
+          alt="Imagem do Personagem Luigi"
+        /> -->
+        <img
+          src="./assets/mario.png"
+          class="visual-section__image"
+          alt="Personagens Mario&Luigi"
+        />
+      </section>
+
+      <!-- Container link whatsapp e tooltip -->
+      <div class="whatsapp-container">
+        <a
+          href="https://web.whatsapp.com/"
+          class="whatsapp-link"
+          target="_blank"
+        >
+          <img
+            src="./assets/whatsapp.png"
+            class="whatsapp-link__image"
+            alt="Link para o WhatsApp"
+          />
+          <span class="tooltip-text">Fale agora mesmo conosco!</span>
+        </a>
+      </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="./scripts.js"></script>
+  </body>
+</html>
