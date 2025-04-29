@@ -20,6 +20,21 @@ p {
   font-size: 1.2rem;
 }
 
+button {
+  background: #ff0000;
+  color: #fff;
+
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+
+  cursor: pointer;
+  outline: none;
+
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 10px;
+}
+
 /* CONTENT */
 
 .video-container {
@@ -88,23 +103,9 @@ main {
 }
 
 .content__button {
-  background: #ff0000;
-  color: #fff;
-
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
   font-size: 1.2rem;
-
-  cursor: pointer;
-  outline: none;
-
-  letter-spacing: 1px;
-
   width: 300px;
   height: 60px;
-
-  border: none;
-  border-radius: 10px;
 }
 
 .content__button:hover {
@@ -117,9 +118,57 @@ main {
   transition: 0.5s ease-out;
 }
 
-.content__button:active {
+/* button com mesmo active */
+.content__button:active,
+.form-contact__button:active {
   opacity: 0.6;
-  transition: 0.5 ease-in-out;
+  transition: 0.8ms ease-in-out;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  position: fixed;
+  top: 25%;
+  transform: translateX(-50%, 50); /* Alinha ao centro */ 
+
+  max-width: 400px;
+  padding: 25px;
+
+  border-radius: 5px 45px 45px;
+  background: #fff;
+}
+
+
+.form-contact__input, 
+ textarea {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+
+  padding-left: 10px;
+  height: 40px;
+
+  background: #f3f3f3;
+  outline-color: #ff0000;
+
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+textarea {
+  padding: 10px 0px 0px 10px;
+  width: 350px;
+  height: 150px;
+}
+
+.form-contact__button {
+  width: 250px;
+  height: 40px;
+
+  margin: 0 auto;
+  font-size: 1rem;
 }
 
 /* transição de imagem */
@@ -148,7 +197,7 @@ main {
   transition: 0.2s ease-in-out;
 }
 
-/* caixa de texto após passar o mouse no link whatsapp */
+/* caixa de texto do link whatsapp */
 .tooltip-text {
   background-color: #fff;
   color: #000;
@@ -173,3 +222,5 @@ main {
 .whatsapp-link:hover .tooltip-text {
   visibility: visible;
 }
+
+/* RESPONSIVENESS */
