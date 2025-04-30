@@ -48,7 +48,10 @@ video {
   height: auto;
 }
 
-.video-container__overlay {
+/* Máscara negra do vídeo e formulário */
+.video-container__overlay,
+.overlay-container--form 
+{
   position: fixed;
   top: 0;
 
@@ -219,6 +222,7 @@ textarea {
   transition: opacity 0.3s;
 }
 
+/* Ao passar o mouse a mensagem aparece */
 .whatsapp-link:hover .tooltip-text {
   visibility: visible;
 }
