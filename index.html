@@ -24,7 +24,7 @@
         />
         <a href="#">Home</a>
         <a href="#">Serviços</a>
-        <a href="#">Fale Conosco</a>
+        <a href="#" onclick="openForm();">Fale Conosco</a>
       </nav>
     </header>
 
@@ -45,11 +45,13 @@
           Apresentamos a vocês os encanadores mais famosos do Reino dos
           Cogumelos.
         </p>
-        <button class="content__button">Entre em Contato</button>
+        <button class="content__button" onclick="openForm()">
+          Entre em Contato
+        </button>
       </section>
 
       <!-- Máscara do formulário -->
-      <div class="overlay-container--form"></div>
+      <div class="overlay-container--form" onclick="closeForm()"></div>
 
       <!-- Formulário -->
       <form class="form-contact">

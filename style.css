@@ -60,6 +60,10 @@ video {
   background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
 }
 
+.overlay-container--form {
+  visibility: hidden;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -135,7 +139,8 @@ main {
 
   position: fixed;
   top: 25%;
-  transform: translateX(-50%, 50); /* Alinha ao centro */ 
+  left: -400px; /* Esconder o formulário */
+  transition: all 0.7s ease-in-out; /* Suaviza a entrada e saída */
 
   max-width: 400px;
   padding: 25px;
