@@ -10,7 +10,9 @@
 
 <h2 align="center">PREVIEW</h2>
 
-<img src="./assets/main-removebg-preview.png" alt="Imagem de previsualização da página">
+![image](https://github.com/user-attachments/assets/a44595b0-243d-400d-91b9-fa314e1fb910)
+
+<br>
 
 <h2>⬇️ INSTALAÇÃO</h2>
 
@@ -19,7 +21,7 @@ $ git clone https://github.com/vinixsantos06/Encanadores-MarioLuigi-Responsivo
 
 $ cd Encanadores-MarioLuigi-Responsivo
 
-$ git push
+$ git pull
 
 $ code .
 ```
