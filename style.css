@@ -90,9 +90,10 @@ a:hover {
 
 main {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  
+
   height: 90vh;
   padding: 100px;
 }
@@ -230,6 +231,24 @@ textarea {
 /* Ao passar o mouse a mensagem aparece */
 .whatsapp-link:hover .tooltip-text {
   visibility: visible;
+}
+
+#services {
+  padding: 115px;
+  margin-top: 150px;
+}
+
+#services > h2 {
+}
+
+.services__list-container {
+  display: flex;
+  align-items: center;
+}
+
+.services__item {
+  width: 50%;
+  gap: 50px;
 }
 
 /* RESPONSIVENESS */
