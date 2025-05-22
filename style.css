@@ -94,8 +94,12 @@ main {
   align-items: center;
   justify-content: space-around;
 
-  height: 90vh;
+  height: 100vh;
   padding: 100px;
+}
+
+section {
+  height: 100vh;
 }
 
 .content-section {
@@ -235,7 +239,6 @@ textarea {
 
 #services {
   max-width: 1200px;
-  margin: 140px auto 0;
   padding: 80px 20px;
 }
 
@@ -260,7 +263,7 @@ textarea {
 .services__item {
   flex: 1 1 250px;
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px;
+  padding: 40px;
   text-align: center;
   border-radius: 10px;
   backdrop-filter: blur(5px);
